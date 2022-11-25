@@ -1,17 +1,18 @@
 import styles from './NavBar.module.css'
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap'
+import { NavLink as RouterLink } from 'react-router-dom'
 
 const NavBar = () => {
 
     return (
         <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
             <Container fluid>
-                <Navbar.Brand href='#'>Photographers</Navbar.Brand>
+                <Navbar.Brand as={RouterLink} to='/'>Photographers</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse>
                     <Nav className='me-auto'>
-                        <Nav.Link>Home</Nav.Link>
-                        <Nav.Link>Celebrities</Nav.Link>
+                        <Nav.Link as={RouterLink} to='/'>Home</Nav.Link>
+                        <Nav.Link as={RouterLink} to='/people'>Celebrities</Nav.Link>
                     </Nav>
                     <Form className='d-flex'>
                         <Form.Control
