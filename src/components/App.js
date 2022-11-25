@@ -1,11 +1,16 @@
 import { Button } from 'react-bootstrap'
-
+import HomePage from './HomePage'
+import NavBar from './NavBar'
+import styles from './App.module.css'
 
 const App = () => {
     return (
-        <div>
-            <Button variant="primary">Primary</Button>{' '}
-        </div>
+        <>
+            <NavBar />
+            <div className={styles.pageWrapper}>
+                <HomePage />
+            </div>
+        </>
     )
 }
 
