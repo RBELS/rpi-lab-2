@@ -1,0 +1,46 @@
+.info {
+    display: flex;
+}
+
+.textInfo {
+
+}
+
+@media screen and (min-width: 850px) {
+    .info {
+        flex-direction: row;
+    }
+
+    .textInfo {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .info {
+        flex-direction: column;
+    }
+}
+
+
+.personImage {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px #ffffff;
+    border: 1px dashed #084298;
+}
+
+.smallTextDescription {
+
+}
+
+.yearsOfLife {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
