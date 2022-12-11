@@ -6,6 +6,7 @@ import styles from './App.module.css'
 import { Route, Routes } from 'react-router-dom'
 import PeopleListPage from './PeopleListPage'
 import PersonPage from './PersonPage'
+import Developers from './Developers'
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Route path='/people/:id' element={<PersonPage />}/>
                     <Route path='*' element={<NotFoundPage />}/>
                 </Routes>
+                <Developers />
             </div>
         </>
     )
