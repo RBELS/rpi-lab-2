@@ -1,0 +1,19 @@
+.mainTitle {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+}
+
+@media screen and (min-width: 850px) {
+    .info {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .info {
+        flex-direction: column;
+    }
+}
