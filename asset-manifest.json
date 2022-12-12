@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/rpi-lab-2/static/css/main.b49dcd6b.css",
-    "main.js": "/rpi-lab-2/static/js/main.beda6697.js",
+    "main.css": "/rpi-lab-2/static/css/main.47b33fc0.css",
+    "main.js": "/rpi-lab-2/static/js/main.bb1c40ea.js",
     "static/js/787.858e52bd.chunk.js": "/rpi-lab-2/static/js/787.858e52bd.chunk.js",
+    "static/media/Klinov1.png": "/rpi-lab-2/static/media/Klinov1.706840e8e1da3b920b67.png",
+    "static/media/Klinov3.jpeg": "/rpi-lab-2/static/media/Klinov3.0eb4b2ea5456380b6e54.jpeg",
+    "static/media/Klinov4.jpeg": "/rpi-lab-2/static/media/Klinov4.48dc7525dbd369bb86f7.jpeg",
+    "static/media/Klinov6.jpeg": "/rpi-lab-2/static/media/Klinov6.b9744710f84378b24a54.jpeg",
+    "static/media/Klinov5.jpeg": "/rpi-lab-2/static/media/Klinov5.27248026f058854764f0.jpeg",
+    "static/media/Klinov2.jpeg": "/rpi-lab-2/static/media/Klinov2.49f966c937bcde1f45fc.jpeg",
+    "static/media/Barazna1.jpg": "/rpi-lab-2/static/media/Barazna1.18e1d1d03335d4a9ef1e.jpg",
+    "static/media/Alexeev1.jpg": "/rpi-lab-2/static/media/Alexeev1.5c92e8de1fe32fe5d5be.jpg",
+    "static/media/Klinov1.JPG": "/rpi-lab-2/static/media/Klinov1.f3e1245cfc67352938bc.JPG",
     "index.html": "/rpi-lab-2/index.html",
-    "main.b49dcd6b.css.map": "/rpi-lab-2/static/css/main.b49dcd6b.css.map",
-    "main.beda6697.js.map": "/rpi-lab-2/static/js/main.beda6697.js.map",
+    "main.47b33fc0.css.map": "/rpi-lab-2/static/css/main.47b33fc0.css.map",
+    "main.bb1c40ea.js.map": "/rpi-lab-2/static/js/main.bb1c40ea.js.map",
     "787.858e52bd.chunk.js.map": "/rpi-lab-2/static/js/787.858e52bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b49dcd6b.css",
-    "static/js/main.beda6697.js"
+    "static/css/main.47b33fc0.css",
+    "static/js/main.bb1c40ea.js"
   ]
 }
