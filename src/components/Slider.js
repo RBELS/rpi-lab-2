@@ -33,9 +33,9 @@ export default class Slider extends Component {
                     />
                     <Carousel.Caption>
                         <h3>
-                        
+                        Арт-вёска Каптаруны
                         </h3>
-                        <p> Арт-вёска Каптаруны</p>
+                        <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -46,9 +46,9 @@ export default class Slider extends Component {
                     />
                     <Carousel.Caption>
                         <h3>
-                        
+                        Проект «Кодекс»
                         </h3>
-                        <p> Проект белорусского павильона назывался «Кодекс»</p>
+                        <p> </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -59,9 +59,9 @@ export default class Slider extends Component {
                     />
                     <Carousel.Caption>
                         <h3>
-                        
+                        Это наш Минск, его послевоенная сталинская архитектура.
                         </h3>
-                        <p>благодаря Артуру Клинову мы увидели в новом свете другое привычное явление — это наш Минск, его послевоенная сталинская архитектура.</p>
+                        <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
