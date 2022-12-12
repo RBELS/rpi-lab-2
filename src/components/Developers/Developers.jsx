@@ -22,10 +22,10 @@ const Developers = () => {
                 </p>
                 <p className={styles.developerInfo}>
                     <a href='github.com'>
-                        <Image className={styles.personImage} fluid src='https://m.media-amazon.com/images/I/41R7eDvFFZL._AC_SY580_.jpg' />
+                        <Image className={styles.personImage} fluid src='https://avatars.githubusercontent.com/u/50217581?v=4' />
                     </a>
                     <div className={styles.textInfo}>
-                        <div className={styles.name}>Еще никнейм</div>
+                        <div className={styles.name}>RBELS</div>
                     </div>
                 </p>
             </p>

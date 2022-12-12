@@ -19,7 +19,6 @@ const App = () => {
                     <Route path='/people/:id' element={<PersonPage />}/>
                     <Route path='*' element={<NotFoundPage />}/>
                 </Routes>
-                <Developers />
             </div>
         </>
     )
