@@ -1,20 +1,3 @@
-.profileLink {
-    margin: 0px 8px 12px;
-}
-
-.profileImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
 .profileLinksWrapper {
     display: flex;
-}
-
-
-@media screen and (min-width: 990px) {
-    .profileLink {
-        margin: 0px 8px;
-    }    
 }

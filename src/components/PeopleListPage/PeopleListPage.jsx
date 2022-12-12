@@ -8,8 +8,6 @@ import { NavLink as RouterLink } from 'react-router-dom'
 
 const PeopleListPage = () => {
     return <div>
-        People list page.
-
         <Container>
             <h2 className='text-center m-4'>Фотографы</h2>
             <div class="row g-3">

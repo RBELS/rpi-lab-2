@@ -1,8 +1,13 @@
 import styles from './NavBar.module.css'
 import { Button, Container, Form, Image, Nav, Navbar } from 'react-bootstrap'
 import { NavLink as RouterLink } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import dataSelectors from '../../store/reducers/dataReducer/dataSelectors'
+import DeveloperItem from './DeveloperItem'
 
 const NavBar = () => {
+    // debugger
+    const developers = useSelector(dataSelectors.developers)
 
     return (
         <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
@@ -16,17 +21,7 @@ const NavBar = () => {
                     </Nav>
 
                     <div className={`${styles.profileLinksWrapper} me-2`}>
-                        <a className={`${styles.profileLink}`} href='https://github.com/RBELS'>
-                            <Image className={styles.profileImg} src='https://avatars.githubusercontent.com/u/50217581?v=4'/>
-                        </a>
-
-                        <a className={`${styles.profileLink}`} href='https://github.com/Nikstanov'>
-                            <Image className={styles.profileImg} src='https://m.media-amazon.com/images/I/41R7eDvFFZL._AC_SY580_.jpg'/>
-                        </a>
-
-                        <a className={`${styles.profileLink}`} href='https://github.com/IntensioT'>
-                            <Image className={styles.profileImg} src='https://i1.sndcdn.com/avatars-5YhOoeqkl8R1QTtE-VPEy0Q-t500x500.jpg'/>
-                        </a>
+                        {developers.map(({ imageSrc, githubSrc }) => <DeveloperItem imageSrc={imageSrc} githubSrc={githubSrc} key={githubSrc}/>)}
                     </div>
                     
 
