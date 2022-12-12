@@ -10,7 +10,6 @@ const PersonPage = () => {
     const params = useParams()
 
     return <div>
-        Person page. Person Id: {params.id}
         <Slider />
         <br></br>
         <h1 className={`${styles.mainTitle}`}>Биография</h1>
