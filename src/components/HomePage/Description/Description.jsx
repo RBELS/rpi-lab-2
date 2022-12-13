@@ -2,7 +2,7 @@ import { Alert, Button, Image } from 'react-bootstrap'
 import { NavLink as RouterLink } from 'react-router-dom'
 import styles from './Description.module.css'
 
-const Description = () => {
+const Description = ({ person }) => {
 
     return <>
         <Alert variant='primary'>
@@ -16,19 +16,13 @@ const Description = () => {
         <Alert variant='primary'>
             <Alert.Heading>Деятель дня</Alert.Heading>
             <p className={`${styles.info}`}>
-                <Image className={styles.personImage} fluid src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Artur_Klinau_-_Minsk_-_2014_AD.JPG/440px-Artur_Klinau_-_Minsk_-_2014_AD.JPG' />
+                <Image className={styles.personImage} src={person.photo} />
                 <div className={styles.textInfo}>
-                    <div className={styles.name}>Артур Аляксандравіч Клінаў</div>
-                    <div className={styles.yearsOfLife}>Годы жизни: 1965 - н.в.</div>
+                    <div className={styles.name}>{person.name}</div>
                     <p className={styles.smallTextDescription}>
-                        &emsp;Артур Аляксандравіч Клінаў (нар. 5 верасня 1965, Мінск) — беларускі мастак, 
-                        акцыяніст, дызайнер, фатограф, літаратар, сцэнарыст, галоўны рэдактар часопіса «pARTisan» (2002).
-
-                        <br />&emsp;Яркі прадстаўнік неафіцыйнага, нефармальнага мастацтва, авангардыст, канцэптуальны мастак, які 
-                        ўпершыню заявіў пра сябе ў канцы 1980-х у Беларусі. Аўтар урбаністычна-культурнай канцэпцыі 
-                        «Горад Сонца» — захавання архітэктурнай унікальнасці цэнтральнай часткі Мінска (Беларусь).
+                        {person.text.map(text => <>&emsp;{person.text[0]}<br /></>)}
                     </p>
-                    <RouterLink to='/people/0'>
+                    <RouterLink to={`/people/${person.id}`}>
                         <Button variant='primary'>Персональная страница</Button>
                     </RouterLink>
                 </div>

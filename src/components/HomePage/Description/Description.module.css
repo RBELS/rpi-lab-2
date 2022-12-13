@@ -28,6 +28,8 @@
     border-radius: 10px;
     box-shadow: 5px 5px 16px #ffffff;
     border: 1px dashed #084298;
+    max-width: 440px;
+    height: fit-content;
 }
 
 .smallTextDescription {
