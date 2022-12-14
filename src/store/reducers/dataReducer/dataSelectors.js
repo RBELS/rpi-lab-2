@@ -12,5 +12,4 @@ const dataSelectors = {
 
 }
 
-
 export default dataSelectors
