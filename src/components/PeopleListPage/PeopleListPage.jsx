@@ -1,6 +1,6 @@
 import { Container, Card, Button, Form } from 'react-bootstrap'
 import styles from './PeopleListPage.module.css'
-import { NavLink as RouterLink } from 'react-router-dom'
+import { NavLink as RouterLink, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import dataSelectors from '../../store/reducers/dataReducer/dataSelectors';
 import Person from './Person';
@@ -9,6 +9,8 @@ import { useEffect } from 'react';
 
 
 const PeopleListPage = () => {
+    const location = useLocation()
+
     const [searchData, setSearchData] = useState('')
     const celebrities = useSelector(dataSelectors.celebritiesFiltered(searchData))
 
@@ -16,9 +18,10 @@ const PeopleListPage = () => {
         setSearchData(event.target.value)
     }
 
-    // useEffect(() => {
-    //     console.log('update')
-    // }, [searchData])
+    useEffect(() => {
+        if (location.state && location.state.searchData)
+            setSearchData(location.state.searchData)
+    }, [location])
 
     return <div>
         <Container>
