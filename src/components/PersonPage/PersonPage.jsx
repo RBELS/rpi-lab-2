@@ -56,7 +56,7 @@ const PersonPage = () => {
             <p className={`${styles.info}`}>
                 <YoutubePlayer
                     id="Yt"
-                    videoId="_EF4ezvNJXE"
+                    videoId={celebrity.youtubeVideoUrl}
                     playbackState="unstarted"
                     className={styles.Content}
                     configuration={{
