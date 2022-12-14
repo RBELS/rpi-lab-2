@@ -59,7 +59,7 @@ export default class Slider extends Component {
                     />
                     <Carousel.Caption>
                         <h3>
-                        Это наш Минск, его послевоенная сталинская архитектура.
+                        Это Минск, его послевоенная сталинская архитектура.
                         </h3>
                         <p></p>
                     </Carousel.Caption>
