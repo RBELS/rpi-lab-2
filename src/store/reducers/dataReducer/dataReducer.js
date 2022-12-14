@@ -54,7 +54,7 @@ const initialState = {
             youtubeVideoUrl: '4O_1ywxjNn0',
             wikipediaUrl: '',
             carouselImages: [ Barazna2, Barazna3, Barazna4 ],
-            Coords:[53.92152705374266, 27.592989284655282]
+            olEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=27.590934634208683%2C53.919656807748034%2C27.595440745353702%2C53.9220766912116&amp;layer=mapnik'
         },
         {
             id: 1,
@@ -75,7 +75,7 @@ const initialState = {
             youtubeVideoUrl: 'usU-Sgpr4LQ',
             wikipediaUrl: '',
             carouselImages: [Alexeev2, Alexeev3, Alexeev4],
-            Coords:[53.92152705374266, 27.592989284655282]
+            olEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=27.590934634208683%2C53.919656807748034%2C27.595440745353702%2C53.9220766912116&amp;layer=mapnik'
         },
         {
             id: 2,
@@ -96,7 +96,8 @@ const initialState = {
             youtubeVideoUrl: 'ChXvR3ps1oM',
             wikipediaUrl: '',
             carouselImages: [Anempadystau2, Anempadystau3, Anempadystau4],
-            Coords:[53.92152705374266, 27.592989284655282]},
+            olEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=27.590934634208683%2C53.919656807748034%2C27.595440745353702%2C53.9220766912116&amp;layer=mapnik'
+        },
         {
             id: 3,
             name: 'Сяргей Уладзіміравіч Калтовіч',
@@ -116,7 +117,7 @@ const initialState = {
             youtubeVideoUrl: 'BHGn4Zk49vY',
             wikipediaUrl: '',
             carouselImages: [Kaltovich2, Kaltovich3, Kaltovich4],
-            Coords:[53.92152705374266, 27.592989284655282],
+            olEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=27.590934634208683%2C53.919656807748034%2C27.595440745353702%2C53.9220766912116&amp;layer=mapnik'
         },
         {
             id: 4,
@@ -137,7 +138,7 @@ const initialState = {
             youtubeVideoUrl: '1PgqAVZpcTU',
             wikipediaUrl: '',
             carouselImages: [Likhtarovich2, Likhtarovich3, Likhtarovich4],
-            Coords:[53.92152705374266, 27.592989284655282],
+            olEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=27.590934634208683%2C53.919656807748034%2C27.595440745353702%2C53.9220766912116&amp;layer=mapnik'
         },
         {
             id: 5,
@@ -158,7 +159,7 @@ const initialState = {
             youtubeVideoUrl: 'BHGn4Zk49vY',
             wikipediaUrl: '',
             carouselImages: [Klinov2, Klinov3, Klinov4],
-            Coords:''
+            olEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=27.590934634208683%2C53.919656807748034%2C27.595440745353702%2C53.9220766912116&amp;layer=mapnik'
         },
     ]
 }

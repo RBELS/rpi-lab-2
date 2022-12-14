@@ -8,6 +8,8 @@
     display: flex;
     border-top: 1px solid #000000;
     padding-top: 10px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .Content{
@@ -31,4 +33,10 @@
     .Content{
         width:100%;
     }
+}
+
+.mapWrapper {
+    width: 100%;
+    max-width: 425px;
+    height: 350px;
 }

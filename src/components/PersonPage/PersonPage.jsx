@@ -66,7 +66,10 @@ const PersonPage = () => {
                         rel: 0
                     }}
                 />
-                <iframe className={styles.Content} src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                
+                <div className={styles.mapWrapper}>
+                    <iframe width='100%' height='100%' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src={celebrity.olEmbedUrl}></iframe><br/>
+                </div>
             </p>
         </Alert>
     </div>
