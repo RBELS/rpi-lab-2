@@ -1,6 +1,7 @@
 const dataSelectors = {
     developers: ({ developers }) => developers,
     celebrities: ({ celebrities }) => celebrities,
+    celebritiesFiltered: (filterStr) => ({ celebrities }) => celebrities.filter((el) => el.name.toLowerCase().includes(filterStr.toLowerCase())),
     celebritiesCount: ({ celebrities }) => celebrities.length,
 
     celebrityByIdSC: (id) => ({ celebrities }) => id ? celebrities[id] : null,

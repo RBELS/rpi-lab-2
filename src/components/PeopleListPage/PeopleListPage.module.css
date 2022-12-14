@@ -1,0 +1,17 @@
+.searchForm {
+    width: 50%;
+    margin: 12px auto;
+}
+
+
+@media screen and (min-width: 900px) {
+    .searchForm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .searchForm {
+        width: 100%;
+    }
+}

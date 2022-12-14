@@ -157,7 +157,7 @@ const initialState = {
             ],
             youtubeVideoUrl: 'BHGn4Zk49vY',
             wikipediaUrl: '',
-            carouselImages: [Klinov2, Klinov3, Klinov4],
+            carouselImages: [Klinov2, Klinov3, Klinov4, Klinov5, Klinov6, Klinov7],
             Coords:''
         },
     ]

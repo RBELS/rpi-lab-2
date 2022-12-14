@@ -9,7 +9,7 @@ const Slider = ({ celebrity }) => {
                 <img
                     className={`d-block w-100`}
                     src =  {imageSrc}
-                    alt = "Klinov"
+                    alt = {celebrity.name}
                 />
                 <Carousel.Caption>
                     <h3>
