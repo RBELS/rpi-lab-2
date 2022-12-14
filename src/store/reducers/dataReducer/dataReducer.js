@@ -1,9 +1,35 @@
 import Barazna1 from '../../../assets/Barazna1.jpg'
+import Barazna2 from '../../../assets/Barazna2.jpg'
+import Barazna3 from '../../../assets/Barazna3.jpg'
+import Barazna4 from '../../../assets/Barazna4.jpg'
+
 import Alexeev1 from '../../../assets/Alexeev1.jpg'
+import Alexeev2 from '../../../assets/Alexeev2.jpg'
+import Alexeev3 from '../../../assets/Alexeev3.jpg'
+import Alexeev4 from '../../../assets/Alexeev4.jpg'
+
 import Anempadystau1 from '../../../assets/Anempadystau1.jpg'
+import Anempadystau2 from '../../../assets/Anempadystau2.jpg'
+import Anempadystau3 from '../../../assets/Anempadystau3.jpg'
+import Anempadystau4 from '../../../assets/Anempadystau4.jpg'
+
 import Kaltovich1 from '../../../assets/Kaltovich1.jpg'
+import Kaltovich2 from '../../../assets/Kaltovich2.jpg'
+import Kaltovich3 from '../../../assets/Kaltovich3.jpg'
+import Kaltovich4 from '../../../assets/Kaltovich4.jpg'
+
 import Likhtarovich1 from '../../../assets/Likhtarovich1.jpg'
+import Likhtarovich2 from '../../../assets/Likhtarovich2.jpg'
+import Likhtarovich3 from '../../../assets/Likhtarovich3.jpg'
+import Likhtarovich4 from '../../../assets/Likhtarovich4.jpg'
+
 import Klinov1 from '../../../assets/Klinov1.JPG'
+import Klinov2 from '../../../assets/Klinov2.jpeg'
+import Klinov3 from '../../../assets/Klinov3.jpeg'
+import Klinov4 from '../../../assets/Klinov4.jpeg'
+import Klinov5 from '../../../assets/Klinov5.jpeg'
+import Klinov6 from '../../../assets/Klinov6.jpeg'
+import Klinov7 from '../../../assets/Klinov7.png'
 
 const initialState = {
     developers: [
@@ -27,6 +53,7 @@ const initialState = {
             ],
             youtubeVideoUrl: '4O_1ywxjNn0',
             wikipediaUrl: '',
+            carouselImages: [ Barazna2, Barazna3, Barazna4 ],
             Coords:[53.92152705374266, 27.592989284655282]
         },
         {
@@ -46,6 +73,7 @@ const initialState = {
             ],
             youtubeVideoUrl: 'usU-Sgpr4LQ',
             wikipediaUrl: '',
+            carouselImages: [Alexeev2, Alexeev3, Alexeev4],
             Coords:[53.92152705374266, 27.592989284655282]
         },
         {
@@ -65,6 +93,7 @@ const initialState = {
             ],
             youtubeVideoUrl: 'ChXvR3ps1oM',
             wikipediaUrl: '',
+            carouselImages: [Anempadystau2, Anempadystau3, Anempadystau4],
             Coords:[53.92152705374266, 27.592989284655282]},
         {
             id: 3,
@@ -83,6 +112,7 @@ const initialState = {
             ],
             youtubeVideoUrl: 'BHGn4Zk49vY',
             wikipediaUrl: '',
+            carouselImages: [Kaltovich2, Kaltovich3, Kaltovich4],
             Coords:[53.92152705374266, 27.592989284655282],
         },
         {
@@ -102,6 +132,7 @@ const initialState = {
             ],
             youtubeVideoUrl: '1PgqAVZpcTU',
             wikipediaUrl: '',
+            carouselImages: [Likhtarovich2, Likhtarovich3, Likhtarovich4],
             Coords:[53.92152705374266, 27.592989284655282],
         },
         {
@@ -121,6 +152,7 @@ const initialState = {
             ],
             youtubeVideoUrl: 'BHGn4Zk49vY',
             wikipediaUrl: '',
+            carouselImages: [Klinov2, Klinov3, Klinov4, Klinov5, Klinov6, Klinov7],
             Coords:''
         },
     ]

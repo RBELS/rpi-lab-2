@@ -1,6 +1,6 @@
 import { Alert, Col, Container, Nav, Row, Tab } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
-import Slider from '../Slider'
+import Slider from './Slider'
 import styles from './PersonPage.module.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -13,7 +13,7 @@ const PersonPage = () => {
     const celebrity = useSelector(dataSelectors.celebrityByIdSC(params.id))
 
     return celebrity && <div>
-        <Slider />
+        <Slider celebrity={celebrity}/>
         <br></br>
         <h1 className={`${styles.mainTitle}`}>Биография</h1>
         <VerticalTimeline>
