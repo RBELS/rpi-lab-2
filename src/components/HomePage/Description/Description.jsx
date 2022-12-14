@@ -20,7 +20,7 @@ const Description = ({ person }) => {
                 <div className={styles.textInfo}>
                     <div className={styles.name}>{person.name}</div>
                     <p className={styles.smallTextDescription}>
-                        {person.text[0]}
+                        {person.shortBio}
                     </p>
                     <RouterLink to={`/people/${person.id}`}>
                         <Button variant='primary'>Персональная страница</Button>
