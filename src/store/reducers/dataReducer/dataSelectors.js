@@ -6,7 +6,7 @@ const dataSelectors = {
     celebrityByIdSC: (id) => ({ celebrities }) => id ? celebrities[id] : null,
     celOfTheDay: ({ celebrities }) => {
         const date = new Date()
-        const index = (date.getMonth()*30 + date.getDay()) % celebrities.length;
+        const index = (date.getMonth() + date.getDay()) % celebrities.length;
         return celebrities[index]
     }
 
