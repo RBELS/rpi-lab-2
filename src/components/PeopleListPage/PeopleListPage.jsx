@@ -36,7 +36,6 @@ const PeopleListPage = () => {
                     value={searchData || ''}
                     onChange={onSearchDataChange}
                 />
-                <Button variant="outline-success">Search</Button>
             </Form>
 
             <div className="row g-3">
