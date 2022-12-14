@@ -51,13 +51,14 @@ const PersonPage = () => {
                 </p>
             </VerticalTimelineElement>
         </VerticalTimeline>
-        <Alert variant='primary'>
-            <Alert.Heading>Подвал с детьми</Alert.Heading>
+        <Alert variant='light'>
+            <Alert.Heading>Дополнительная информация</Alert.Heading>
             <p className={`${styles.info}`}>
                 <YoutubePlayer
                     id="Yt"
                     videoId="_EF4ezvNJXE"
                     playbackState="unstarted"
+                    className={styles.Content}
                     configuration={{
                         showinfo: 0,
                         controls: 0,
@@ -65,10 +66,10 @@ const PersonPage = () => {
                         rel: 0
                     }}
                 />
+                <iframe className={styles.Content} src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </p>
         </Alert>
     </div>
 }
-
 
 export default PersonPage
