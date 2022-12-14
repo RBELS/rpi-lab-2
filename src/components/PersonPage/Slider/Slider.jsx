@@ -13,7 +13,7 @@ const Slider = ({ celebrity }) => {
                 />
                 <Carousel.Caption>
                     <h3>
-                        {celebrity.name}
+                        {celebrity.sliderTxt}
                     </h3>
                     <p></p>
                 </Carousel.Caption>
