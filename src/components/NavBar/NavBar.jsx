@@ -21,6 +21,10 @@ const NavBar = () => {
         setSearchData(event.target.value)
     }
 
+    const onLngChange = (event) => {
+        i18n.changeLanguage(event.target.value)
+    }
+
     const onSearchBtClicked = (event) => {
         navigate('/people', { state: { searchData } })
     }
@@ -43,8 +47,10 @@ const NavBar = () => {
                     </div>
 
                     <Form className='d-flex'>
-                        <Button variant="outline-success" className={styles.buttonLng} onClick={() => i18n.changeLanguage('en')}>en</Button>
-                        <Button variant="outline-success" className={styles.buttonLng} onClick={() => i18n.changeLanguage('by')}>by</Button>
+                        <select className={styles.lng} onChange={onLngChange}>
+                            <option value='by'>by</option>
+                            <option value='en'>en</option>
+                        </select>
                         <Form.Control
                             type="search"
                             placeholder={t('searchButtonText')}
