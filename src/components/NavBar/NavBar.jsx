@@ -6,8 +6,11 @@ import dataSelectors from '../../store/reducers/dataReducer/dataSelectors'
 import DeveloperItem from './DeveloperItem'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import i18n from 'i18next'
+
 
 const NavBar = () => {
+
     const navigate = useNavigate()
     const developers = useSelector(dataSelectors.developers)
 
@@ -36,11 +39,12 @@ const NavBar = () => {
                     </Nav>
 
                     <div className={`${styles.profileLinksWrapper} me-2`}>
-                        {developers.map(({ imageSrc, githubSrc }) => <DeveloperItem imageSrc={imageSrc} githubSrc={githubSrc} key={githubSrc}/>)}
+                        {developers.map(({ imageSrc, githubSrc }) => <DeveloperItem imageSrc={imageSrc} githubSrc={githubSrc} key={githubSrc} />)}
                     </div>
-                    
 
                     <Form className='d-flex'>
+                        <Button variant="outline-success" className={styles.buttonLng} onClick={() => i18n.changeLanguage('en')}>en</Button>
+                        <Button variant="outline-success" className={styles.buttonLng} onClick={() => i18n.changeLanguage('by')}>by</Button>
                         <Form.Control
                             type="search"
                             placeholder={t('searchButtonText')}
@@ -53,7 +57,7 @@ const NavBar = () => {
                     </Form>
                 </Navbar.Collapse>
             </Container>
-            
+
         </Navbar>
     )
 }
