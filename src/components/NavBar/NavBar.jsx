@@ -28,6 +28,7 @@ const NavBar = () => {
 
     const onSearchBtClicked = (event) => {
         navigate('/people', { state: { searchData } })
+        event.preventDefault()
     }
 
     const { t } = useTranslation()
@@ -48,7 +49,7 @@ const NavBar = () => {
                     </div>
 
                     
-                    <Form className='d-flex'>
+                    <Form className='d-flex' onSubmit={onSearchBtClicked}>
                         <LanguageSelect />
                         <Form.Control
                             type="search"
