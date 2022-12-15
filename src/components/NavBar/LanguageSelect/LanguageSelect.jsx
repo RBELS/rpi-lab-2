@@ -8,9 +8,9 @@ const LanguageSelect = () => {
         i18n.changeLanguage(event.target.value)
     }
 
-    return <select onChange={onLanguageSelect} className={`${styles.select} form-select form-select-sm me-4`} aria-label=".form-select-sm example">
-        <option value="en">EN</option>
-        <option selected value="by">BY</option>
+    return <select className={styles.lngSelect} onChange={onLanguageSelect}>
+        <option selected value='by'>BY</option>
+        <option value='en'>EN</option>
     </select>
 }
 

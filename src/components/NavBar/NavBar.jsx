@@ -22,6 +22,10 @@ const NavBar = () => {
         setSearchData(event.target.value)
     }
 
+    const onLngChange = (event) => {
+        i18n.changeLanguage(event.target.value)
+    }
+
     const onSearchBtClicked = (event) => {
         navigate('/people', { state: { searchData } })
     }
@@ -43,8 +47,9 @@ const NavBar = () => {
                         {developers.map(({ imageSrc, githubSrc }) => <DeveloperItem imageSrc={imageSrc} githubSrc={githubSrc} key={githubSrc} />)}
                     </div>
 
-                    <LanguageSelect />
+                    
                     <Form className='d-flex'>
+                        <LanguageSelect />
                         <Form.Control
                             type="search"
                             placeholder={t('searchButtonText')}

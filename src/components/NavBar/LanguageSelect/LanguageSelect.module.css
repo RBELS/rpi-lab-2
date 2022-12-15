@@ -1,16 +1,5 @@
-.select {
-    height: 38px;
-}
-
-@media screen and (min-width: 990px) {
-    .select {
-        width: fit-content;
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .select {
-        width: 80%;
-        margin: 10px 0px;
-    }
+.lngSelect {
+    margin-right: 10px;
+    border-radius: 10%;
+    color: rgb(129, 129, 129);
 }
