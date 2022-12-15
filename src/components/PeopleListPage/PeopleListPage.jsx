@@ -25,11 +25,15 @@ const PeopleListPage = () => {
             setSearchData(location.state.searchData)
     }, [location])
 
+    const preventDefault = (event) => {
+        event.preventDefault()
+    }
+
     return <div>
         <Container>
             <h2 className='text-center m-4'>{t('websiteLogo')}</h2>
 
-            <Form className={`d-flex ${styles.searchForm}`}>
+            <Form className={`d-flex ${styles.searchForm}`} onSubmit={preventDefault}>
                 <Form.Control
                     type="search"
                     placeholder={t('searchButtonText')}
