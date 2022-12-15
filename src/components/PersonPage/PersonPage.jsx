@@ -18,7 +18,7 @@ const PersonPage = () => {
         <Slider celebrity={celebrity}/>
         <br></br>
         <h1 className={`${styles.mainTitle}`}>{t('biographyText')}</h1>
-        <VerticalTimeline>
+        <VerticalTimeline lineColor='lightgrey'>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
