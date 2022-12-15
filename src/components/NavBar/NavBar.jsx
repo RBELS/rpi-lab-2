@@ -7,6 +7,7 @@ import DeveloperItem from './DeveloperItem'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
+import LanguageSelect from './LanguageSelect/LanguageSelect'
 
 
 const NavBar = () => {
@@ -42,14 +43,13 @@ const NavBar = () => {
                         {developers.map(({ imageSrc, githubSrc }) => <DeveloperItem imageSrc={imageSrc} githubSrc={githubSrc} key={githubSrc} />)}
                     </div>
 
+                    <LanguageSelect />
                     <Form className='d-flex'>
-                        <Button variant="outline-success" className={styles.buttonLng} onClick={() => i18n.changeLanguage('en')}>en</Button>
-                        <Button variant="outline-success" className={styles.buttonLng} onClick={() => i18n.changeLanguage('by')}>by</Button>
                         <Form.Control
                             type="search"
                             placeholder={t('searchButtonText')}
                             aria-label="Search"
-                            className='me-3'
+                            className='me-4'
                             value={searchData}
                             onChange={onSearchDataChange}
                         />
