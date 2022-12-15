@@ -7,15 +7,17 @@ import 'react-vertical-timeline-component/style.min.css';
 import YoutubePlayer from 'react-youtube';
 import { useSelector } from 'react-redux';
 import dataSelectors from '../../store/reducers/dataReducer/dataSelectors';
+import { useTranslation } from 'react-i18next';
 
 const PersonPage = () => {
     const params = useParams()
+    const { t } = useTranslation()
     const celebrity = useSelector(dataSelectors.celebrityByIdSC(params.id))
 
     return celebrity && <div>
         <Slider celebrity={celebrity}/>
         <br></br>
-        <h1 className={`${styles.mainTitle}`}>Биография</h1>
+        <h1 className={`${styles.mainTitle}`}>{t('biographyText')}</h1>
         <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -23,7 +25,7 @@ const PersonPage = () => {
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             >
-                <h3 className="vertical-timeline-element-title">Юношество</h3>
+                <h3 className="vertical-timeline-element-title">{t('youthText')}</h3>
                 <p>
                     {celebrity.text[0]}
                 </p>
@@ -34,7 +36,7 @@ const PersonPage = () => {
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             >
-                <h3 className="vertical-timeline-element-title">Взрослость</h3>
+                <h3 className="vertical-timeline-element-title">{t('adulthoodText')}</h3>
                 <p>
                     {celebrity.text[1]}
                 </p>
@@ -45,14 +47,14 @@ const PersonPage = () => {
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             >
-                <h3 className="vertical-timeline-element-title">Старость</h3>
+                <h3 className="vertical-timeline-element-title">{t('oldageText')}</h3>
                 <p>
                     {celebrity.text[2]}
                 </p>
             </VerticalTimelineElement>
         </VerticalTimeline>
         <Alert variant='light'>
-            <Alert.Heading>Дополнительная информация</Alert.Heading>
+            <Alert.Heading>{t('additionalInfoText')}</Alert.Heading>
             <p className={`${styles.info}`}>
                 <YoutubePlayer
                     id="Yt"

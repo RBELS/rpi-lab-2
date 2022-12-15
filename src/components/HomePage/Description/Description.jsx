@@ -1,20 +1,20 @@
 import { Alert, Button, Image } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import { NavLink as RouterLink } from 'react-router-dom'
 import styles from './Description.module.css'
 
 const Description = ({ person }) => {
+    const { t } = useTranslation()
 
     return <>
         <Alert variant='primary'>
-            <Alert.Heading>Фотографы Беларуси</Alert.Heading>
+            <Alert.Heading>{t('welcomeHeaderText')}</Alert.Heading>
             <p>
-                Добро пожаловать на этот интернет-портал! 
-                Тут вы можете найти информацию о наиболее знаменитых белорусских фотографах. 
-                Читайте и наслаждайтесь!
+                {t('welcomeText')}
             </p>
         </Alert>
         <Alert variant='primary'>
-            <Alert.Heading>Деятель дня</Alert.Heading>
+            <Alert.Heading>{t('artistOfTheDayText')}</Alert.Heading>
             <p className={`${styles.info}`}>
                 <Image className={styles.personImage} src={person.photo} />
                 <div className={styles.textInfo}>
@@ -22,8 +22,9 @@ const Description = ({ person }) => {
                     <p className={styles.smallTextDescription}>
                         {person.shortBio}
                     </p>
+                    
                     <RouterLink to={`/people/${person.id}`}>
-                        <Button variant='primary'>Персональная страница</Button>
+                        <Button variant='primary'>{t('personalPageText')}</Button>
                     </RouterLink>
                 </div>
             </p>

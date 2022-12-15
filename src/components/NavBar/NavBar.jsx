@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import dataSelectors from '../../store/reducers/dataReducer/dataSelectors'
 import DeveloperItem from './DeveloperItem'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const NavBar = () => {
     const navigate = useNavigate()
@@ -21,15 +22,17 @@ const NavBar = () => {
         navigate('/people', { state: { searchData } })
     }
 
+    const { t } = useTranslation()
+
     return (
         <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
             <Container fluid>
-                <Navbar.Brand as={RouterLink} to='/'>Photographers</Navbar.Brand>
+                <Navbar.Brand as={RouterLink} to='/'>{t('websiteLogo')}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse>
                     <Nav className='me-auto'>
-                        <Nav.Link as={RouterLink} to='/'>Home</Nav.Link>
-                        <Nav.Link as={RouterLink} to='/people'>Celebrities</Nav.Link>
+                        <Nav.Link as={RouterLink} to='/'>{t('homeLinkText')}</Nav.Link>
+                        <Nav.Link as={RouterLink} to='/people'>{t('peopleLinkText')}</Nav.Link>
                     </Nav>
 
                     <div className={`${styles.profileLinksWrapper} me-2`}>
@@ -40,13 +43,13 @@ const NavBar = () => {
                     <Form className='d-flex'>
                         <Form.Control
                             type="search"
-                            placeholder="Search"
+                            placeholder={t('searchButtonText')}
                             aria-label="Search"
                             className='me-3'
                             value={searchData}
                             onChange={onSearchDataChange}
                         />
-                        <Button variant="outline-success" onClick={onSearchBtClicked} >Search</Button>
+                        <Button variant="outline-success" onClick={onSearchBtClicked}>{t('searchButtonText')}</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>

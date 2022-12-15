@@ -6,10 +6,12 @@ import dataSelectors from '../../store/reducers/dataReducer/dataSelectors';
 import Person from './Person';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 const PeopleListPage = () => {
     const location = useLocation()
+    const { t } = useTranslation()
 
     const [searchData, setSearchData] = useState('')
     const celebrities = useSelector(dataSelectors.celebritiesFiltered(searchData))
@@ -25,12 +27,12 @@ const PeopleListPage = () => {
 
     return <div>
         <Container>
-            <h2 className='text-center m-4'>Фотографы</h2>
+            <h2 className='text-center m-4'>{t('websiteLogo')}</h2>
 
             <Form className={`d-flex ${styles.searchForm}`}>
                 <Form.Control
                     type="search"
-                    placeholder="Search"
+                    placeholder={t('searchButtonText')}
                     aria-label="Search"
                     className='me-3'
                     value={searchData || ''}
